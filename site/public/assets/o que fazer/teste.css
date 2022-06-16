@@ -1,0 +1,12 @@
+.destino{
+display: flex;
+align-items: center;
+flex-direction: row;
+padding: 20px;
+gap: 20px;
+font-size: 18px;
+}
+.destino img{
+    width: 20%;
+    border-radius: 4px;
+}

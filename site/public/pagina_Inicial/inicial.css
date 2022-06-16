@@ -1,0 +1,1133 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Open+Sans:wght@300&family=PT+Serif&family=Raleway:ital,wght@1,100&family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+/*Inicio header*/
+
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    font-family: 'Righteous', cursive;
+    align-items: center;
+
+    
+
+}
+
+.imgLogo {
+    display: flex;
+    height: 80px;
+    gap: 20px;
+}
+
+/* Fim do cabeçalho*/
+
+.button1 {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Righteous', cursive;
+
+}
+
+.button1:hover {
+    background-color: rgb(233, 223, 223);
+    color: white;
+}
+
+.button2 {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Righteous', cursive;
+
+}
+
+.button2:hover {
+    background-color: rgb(233, 223, 223);
+    color: white;
+}
+
+.button3 {
+
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Righteous', cursive;
+
+}
+
+.button3:hover {
+    background-color: rgb(233, 223, 223);
+    color: white;
+}
+
+/*inicio footer*/
+
+.footer {
+    
+    margin-top: 50px;
+    display: flex;
+    border-top: 10px solid rgb(233, 223, 223);
+    padding-top: 10px;
+    padding-left: 12px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.contato {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    gap: 100px;
+
+}
+
+.contato img {
+
+    height: 60px;
+}
+
+
+
+/*Inicio pagina Inicial*/
+
+.imgFiltro {
+    display: flex;
+    padding-top: 20px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+
+    /*imgs/mountains-4671122__340.jpg*/
+
+}
+
+
+.selects {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 5px;
+    font-family: 'Sarala', sans-serif;
+
+}
+
+#select_mes {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 175px;
+    text-align: center;
+    border-radius: 4px;
+    border: 3px solid rgb(233, 223, 223);
+    font-family: 'Sarala', sans-serif;
+
+
+
+}
+
+#select_pais {
+
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 130px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    border: 3px solid rgb(233, 223, 223);
+    font-family: 'Sarala', sans-serif;
+}
+
+#select_Preco {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 130px;
+    text-align: center;
+    border-radius: 4px;
+    border: 3px solid rgb(233, 223, 223);
+    font-family: 'Sarala', sans-serif;
+}
+
+#select_acompanhante {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 130px;
+    text-align: center;
+    border-radius: 4px;
+    border: 3px solid rgb(233, 223, 223);
+    font-family: 'Sarala', sans-serif;
+}
+
+.imgFiltro button {
+    background-color: rgb(233, 223, 223);
+    height: 50px;
+    width: 130px;
+    border-radius: 4px;
+    border: 3px solid rgb(233, 223, 223);
+    font-family: 'Sarala', sans-serif;
+    font-size: 15px;
+}
+
+/*Destinos
+
+Destino 1*/
+
+.destinos{
+    display: flex;
+    align-items: baseline;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Righteous', cursive;
+}
+.dist1{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+}
+.dist1 img {
+    width: 300px;
+    border-radius: 5px;
+}
+.dist1 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    
+}
+.dist1 button:hover{
+
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*destino 2*/
+
+.dist2{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+
+}
+.dist2 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist2 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist2 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*destino 3 */
+
+.dist3{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist3 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist3 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist3 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 4*/
+.dist4{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist4 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist4 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist4 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 5*/
+.dist5{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist5 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist5 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist5 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 6 */
+.dist6{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist6 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist6 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist6 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 7*/
+.dist7{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist7 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist7 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist7 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 8*/
+.dist8{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist8 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist8 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist8 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 9*/
+.dist9{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist9 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist9 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist9 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*destino 10*/
+.dist10{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist10 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist10 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist10 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 11*/
+.dist11{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist11 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist11 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist11 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 12*/
+.dist12{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist12 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist12 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist12 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 13*/
+.dist13{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist13 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist13 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist13 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 14*/
+.dist14{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist14 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist14 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist14 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 15*/
+.dist15{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist15 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist15 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist15 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 16*/
+.dist16{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist16 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist16 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist16 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 17*/
+.dist17{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist17 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist17 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist17 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 18*/
+.dist18{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist18 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist18 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist18 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 19*/
+.dist19{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist19 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist19 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist19 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 20*/
+.dist20{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist20 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist20 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist20 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 21*/
+.dist21{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist21 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist21 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist21 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 22*/
+.dist22{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist22 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist22 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist22 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 23*/
+.dist23{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist23 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist23 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist23 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 24*/
+.dist24{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist24 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist24 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist24 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 25*/
+.dist25{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist25 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist25 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist25 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+/*Destino 26*/
+.dist26{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    width:max-content;
+    font-family: 'Righteous', cursive;
+
+}
+.dist26 img {
+    width: 300px;
+    height: 170px;
+    border-radius: 5px;
+}
+.dist26 button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dist26 button:hover{
+    background-color: rgb(233, 223, 223) ;
+    color: black;
+}
+
+/*descrição*/
+.desc  {
+display: flex;
+align-items: center;
+justify-content: baseline;
+text-align: center;
+flex-direction: row;
+padding-right: 20px;
+}
+.desc img{
+    width: 550px;
+    padding: 20px;
+    padding-left: 80px;
+    border-radius: 50px;
+}
+.texto{
+
+    font-size: 18px;
+    font-family: 'Sarala', sans-serif;
+
+}
+.texto h1{
+
+    font-family: 'Righteous', cursive;
+
+}
+
+
+
+
+
+
+
+

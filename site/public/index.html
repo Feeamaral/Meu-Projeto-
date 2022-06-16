@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+
+            <div class="navBar">
+                <div class="imgLogo">
+
+                    <img src="./assets/logo.png" alt="">
+                    <br> HOLYDAY <br><br> HOMES
+
+                </div>
+                <div>
+                    <ul>
+                        <a class="button1" id="aqui">INICIAL</a>
+                        <a class="button3" href="login.html">DESCOBRIR</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div>
+            <div class="imgsPrincipal">
+
+                <img id="imgP" style="display: none;"></img>
+
+            </div>
+
+        </div>
+        <div class="social">
+            <div class="container">
+                <div class="boxes">
+                    
+                    <div class="box">
+                        <img src="./imgs/_Pngtree_minimalist_cute_search_box_7152835-removebg-preview.png" alt="">
+                        <h4>pesquisa</h4>
+                        <p>
+                            Busque o destino perfeito para você. 
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="./imgs/globo.png" alt="">
+                        <h4>experiência</h4>
+                        <p>
+                            Tenha uma experiência incrível. 
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="./imgs/avaliacao-removebg-preview.png" alt="">
+                        
+                        <a href="./experiencia.html " style="color: black; text-decoration:none" > <br><br><h4>avaliação</h4></a>
+                        <p>
+                            deixe sua avaliação aqui para <br> sabermos sua avaliação sobre o destino. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+
+            <div class="contato">
+            
+                <img src="./imgs/logo-removebg-preview.png" alt="">
+
+            </div>
+
+</body>
+
+</html>
+<img src="" alt="">
+
+<script>
+
+    var vt_carrossel = ['./assets/veneza.jpg', 'https://cdn.pixabay.com/photo/2016/06/01/02/00/life-1428183__340.jpg', './assets/aviao.jpg'];
+
+    var i = 0;
+
+    imgP.src = vt_carrossel[vt_carrossel.length - 1];
+
+
+    imgP.style.display = 'block';
+
+    setInterval(() => imagens(), 2000)
+    function imagens() {
+
+        imgP.src = vt_carrossel[i];
+
+
+        imgP.style.display = 'block';
+
+        if (i == 2) {
+
+            i = 0;
+
+        } else {
+            i++;
+        }
+
+    }
+
+
+    
+
+
+
+</script>

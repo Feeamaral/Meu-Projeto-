@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicial.css">
+    <script src="principal.js"></script>
+    <title>inicial</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+
+            <div class="navBar">
+                <div class="imgLogo">
+
+
+                    <img src="../assets/logo.png" alt="">
+                    <br> SEJA BEM VINDO <br><br> HOLYDAY HOMES
+
+                </div>
+                <div>
+                    <ul>
+                        <a class="button1" id="aqui">INICIAL</a>
+                        <a class="button2" href="../experiencia.html">EXPERIÊNCIA</a>
+                        <a class="button3" href="login.html">DESCOBRIR</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="imgFiltro">
+            <div class="selects">
+
+                <br><select name="mes" id="select_mes">
+
+                    <option value="0">Mês que pretente viajar</option>
+                    <option value="1">Janeiro</option>
+                    <option value="2">Fevereiro</option>
+                    <option value="3">Março</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Maio</option>
+                    <option value="6">Junho</option>
+                    <option value="7">Julho</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+                <select name="Pais" id="select_pais">
+                    <option value="0">Destino</option>
+                    <option value="1">Nacional</option>
+                    <option value="2">Exterior</option>
+                </select>
+
+                <select name="preco" id="select_Preco">
+                    <option value="0">Selecione</option>
+                    <option value="1">Menos que 2.000,00</option>
+                    <option value="2">2.000,00 - 5.000,00</option>
+                    <option value="3">6.000,00 - 10.000,00</option>
+                    <option value="4">11.000,00 - 15.000,00</option>
+                    <option value="5">16.000,00 - 25.000,00</option>
+                    <option value="6"> mais que 30.000,00</option>
+
+
+                </select>
+
+
+                <select name="acompanhante" id="select_acompanhante">
+                    <option value="0">Acompanhente</option>
+                    <option value="1">Filho</option>
+                    <option value="2">Conjuge</option>
+                    <option value="3">Amigos</option>
+                </select>
+
+                <button onclick="filtrar()">FILTRAR</button>
+            </div>
+        </div>
+    </div>
+    <div class="destinos">
+
+        <div id="img1" class="dist1" style="display:none;">
+
+            <img src="../imgs/bora bora1.jfif" alt=""><br>
+
+
+
+            <br><button><b>BORA BORA</b> </button>
+        </div>
+
+        <div id="img2" class="dist2" style="display:none;">
+            <img src="../imgs/maldivas.jfif" alt=""><br><br>
+
+            <a href="./maldivas.html"> <button><b>MALDIVAS</b> </button></a>
+
+        </div>
+
+        <div id="img3" class="dist3" style="display:none;">
+            <img src="../imgs/abuDhabi.jfif" alt="">
+
+            <br><button><b>ABU DHABI</b> </button>
+        </div>
+
+        <div id="img4" class="dist4" style="display:none;">
+            <img src="../imgs/dubai.jpg" alt="">
+
+            <br><button><b>DUBAI</b> </button>
+        </div>
+
+        <div id="img5" class="dist5" style="display:none;">
+            <img src="../imgs/grecia.jfif" alt="">
+
+            <br><button><b>GRÉCIA</b> </button>
+        </div>
+
+        <div id="img6" class="dist6" style="display:none;">
+            <img src="../imgs/cruzeiro.jpg" alt="">
+
+            <br><button><b>CRUZEIRO</b> </button>
+        </div>
+
+        <div id="img7" class="dist7" style="display:none;">
+            <img src="../imgs/italia.jfif" alt="">
+
+            <br><button><b>ITÁLIA</b> </button>
+        </div>
+
+        <div id="img8" class="dist8" style="display:none;">
+            <img src="../imgs/alemanha.jfif" alt="">
+
+            <br><button><b>ALEMANHA</b> </button>
+        </div>
+
+        <div id="img9" class="dist9" style="display:none;">
+            <img src="../imgs/islandia.jpg" alt="">
+
+            <br><button><b>ISLÂNDIA</b> </button>
+        </div>
+
+        <div id="img10" class="dist10" style="display:none;">
+
+            <img src="../imgs/disney.png" alt=""><br>
+
+            <br><button><b>ORLANDO</b> </button>
+        </div>
+
+        <div id="img11" class="dist11" style="display:none;">
+            <img src="../imgs/usa.avif" alt="">
+
+            <br><button><b>ESTADOS UNIDOS</b> </button>
+        </div>
+
+        <div id="igm12" class="dist12" style="display:none;">
+            <img src="../imgs/puntaCana.jpg" alt="">
+
+            <br><button><b>PUNTA CANA</b> </button>
+        </div>
+
+        <div id="img13" class="dist13" style="display:none;">
+            <img src="../imgs/paris.jpg" alt="">
+
+            <br><button><b>PARIS</b> </button>
+        </div>
+
+        <div id="img14" class="dist14" style="display:none;">
+            <img src="../imgs/egito.jpg" alt="">
+
+            <br><button><b>EGITO</b> </button>
+        </div>
+
+        <div id="img15" class="dist15" style="display:none;">
+            <img src="../imgs/cancun.jpg" alt="">
+
+            <br><button><b>CANCUN</b> </button>
+        </div>
+
+        <div id="img16" class="dist16" style="display:none;">
+            <img src="../imgs/gramado.jpg" alt=""><br>
+
+            <br><button><b>GRAMADO</b> </button>
+        </div>
+
+        <div id="img17" class="dist17" style="display:none;">
+            <img src="../imgs/campos do jordão.jpg" alt="">
+
+            <br><br><button><b>CAMPOS DO JORDÃO</b> </button><br>
+        </div>
+
+        <div id="img18" class="dist18" style="display:none;">
+            <img src="../imgs/sãoMiguel.jpg" alt="">
+
+            <br><br><button><b>SÃO MIGUEL DOS MILAGRES</b> </button><br>
+        </div>
+
+        <div id="img19" class="dist19" style="display:none;">
+            <img src="../imgs/arraial.jpg" alt="">
+
+            <br><br><button><b>ARRAIAL DO CABO</b> </button><br>
+        </div>
+
+        <div id="img20" class="dist20" style="display:none;">
+            <img src="../imgs/porto.jpg" alt="">
+
+            <br><br><button><b>PORTO DE GALINHAS</b> </button><br>
+        </div>
+
+        <div id="img21" class="dist21" style="display:none;">
+            <img src="../imgs/monte.webp" alt="">
+
+            <br><br><button><b>MONTE VERDE</b> </button><br>
+        </div>
+
+        <div id="img22" class="dist22" style="display:none;">
+            <img src="../imgs/amazonia.webp" alt="">
+
+            <br><br><button><b>AMAZÔNIA</b> </button><br>
+        </div>
+
+        <div id="img23" class="dist23" style="display:none;">
+            <img src="../imgs/fernandoFernand.jpg" alt="">
+
+            <br><br><button><b>FERNANDO DE NORRONHA</b> </button><br>
+        </div>
+
+        <div id="img24" class="dist24" style="display:none;">
+            <img src="../imgs/foz.jpg" alt="">
+
+            <br><br><button><b>FOZ DO IGUAÇU</b> </button><br>
+        </div>
+
+        <div id="img25" class="dist25" style="display:none;">
+            <img src="../imgs/natal.webp" alt="">
+
+            <br><br><button><b>NATAL</b> </button><br>
+        </div>
+
+        <div id="img26" class="dist26" style="display:none;">
+            <img src="../imgs/suica.jpg" alt="">
+
+            <br><br><button><b>SUIÇA</b> </button><br>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="contato">
+
+                <img style="height: 180px" src="../imgs/logo-removebg-preview.png" alt="">
+
+
+            </div>
+        </div>
+
+</body>
+
+</html>
+

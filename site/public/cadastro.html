@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Cadastro</title>
+
+    <script src="./js/funcoes.js"></script>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="containerHeader">
+
+            <div class="navBar">
+                <div class="imgLogo">
+
+                    <img src="./assets/logo.png" alt="">
+                    <br> HOLYDAY <br><br> HOMES
+
+                </div>
+                <div class="button"></div>
+                <ul>
+                    <a class="button1" href="index.html">INICIAL</a>
+                    <a class="button3" id="aqui">DESCOBRIR</a>
+                </ul>
+
+            </div>
+        </div>
+        <div>
+            <div class="containerLogin">
+
+                <div class="alerta_erro">
+                    <div class="card_erro" id="cardErro">
+                        <span id="mensagem_erro"></span>
+                    </div>
+                <div class="borda">
+                    <div class="login">
+                        <img src="./assets/logo.png" alt="">
+                        <br><input id="ipt_nome" placeholder="Digite seu nome">
+                        <br><br><input id="ipt_email" placeholder="Digite seu Email">
+                        <br><input id="ipt_confirmeEmail" placeholder="Confirme seu E-mail">
+                        <br><br><input id="ipt_senha" placeholder="Digite sua senha" type="password">
+                        <br><br><input id="ipt_confirmeSenha" placeholder="Confirme sua senha" type="password">
+
+                        <br><br><button onclick="cadastrar()">CADASTRAR</button>
+                        <br><br>
+                        <p><a href="login.html">Clique aqui para fazer seu login</a></p>
+
+                    </div>
+                </div>
+                <div id="div_aguardar" class="loading-div">
+                    <div id="div_erros_login"></div>
+            </div>
+            </div>
+
+            <div class="footer">
+                <div class="container">
+
+                    <div class="contato">
+                        
+                        <img  src="./imgs/logo-removebg-preview.png" alt="">
+
+                    </div>
+                </div>
+
+</body>
+
+</html>
+
+<script>
+    function cadastrar() {
+        aguardar();
+
+        //Recupere o valor da nova input pelo nome do id
+        // Agora vá para o método fetch logo abaixo
+        var nomeVar = ipt_nome.value;
+        console.log(nomeVar)
+        var emailVar = ipt_email.value;
+        var confirmacaoEmailVar = ipt_confirmeEmail.value;
+        var senhaVar = ipt_senha.value;
+        var confirmacaoSenhaVar = ipt_confirmeSenha.value;
+
+        if (nomeVar == "" || emailVar == "" ||  confirmacaoEmailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+
+            finalizarAguardar();
+            return false;
+        }
+        else {
+            setInterval(sumirMensagem, 5000)
+        }
+
+        // Enviando o valor da nova input
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                nomeServer: nomeVar,
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                cardErro.style.display = "block";
+
+                mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+
+                setTimeout(() => {
+                    window.location = "login.html";
+                }, "2000")
+                
+                limparFormulario();
+                finalizarAguardar();
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            finalizarAguardar();
+        });
+
+        return false;
+    }
+
+    function sumirMensagem() {
+        cardErro.style.display = "none"
+    }
+
+</script>

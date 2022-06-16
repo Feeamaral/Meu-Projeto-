@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>Experiência</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="containerHeader">
+
+            <div class="navBar">
+                <div class="imgLogo">
+
+                    <img src="./assets/logo.png" alt="">
+                    <br> HOLYDAY <br><br> HOMES
+
+                </div>
+                <div class="button"></div>
+                <ul>
+                    <a class="button1" href="index.html">INICIAL</a>
+                    <a class="button2" id="aqui">EXPERIÊNCIA</a>
+                    <a class="button3" href="login.html">DESCOBRIR</a>
+                </ul>
+
+            </div>
+        </div>
+        <div>
+            <div class="textoImagem">
+                <h1>CONTE A SUA EXPERIÊNCIA</h1>
+            </div>
+            <div class="banner">
+                <div class="formulario">
+                    <img src="./assets/logo.png" alt="">
+                    <br><input id="ipt_nome" placeholder="Nome">
+                    <br><input id="ipt_email" placeholder="Email">
+                    <br><input id="ipt_data" placeholder="Data da Viagem">
+                    <br><input id="ipt_destino" placeholder="Destino">
+                    <br><input id="ipt_avaliacao" placeholder="Avaliação">
+                    <br><input id="ipt_experiencia" placeholder="Conte a sua experiência">
+
+                    <br><br><button onclick="enviar()">ENVIAR</button>
+
+                    <br>
+                    <div id="msg" style="background-color: rgb(233, 223, 223);"></div>
+
+                </div>
+            </div>
+            <div class="footer">
+                <div class="contato">
+
+                    <img src="./imgs/logo-removebg-preview.png" alt="">
+
+                </div>
+
+</body>
+
+</html>
+
+<script>
+
+    var vt_nome = [];
+    var vt_dataViagem = [];
+    var vt_destino = [];
+    var vt_exp = [];
+    /*var vt_p = [`<br> Seu nome é: ${vt_nome[i]} 
+                      <br> A data da sua viagem é : ${vt_dataViagem[i]}
+                      <br> Seu destino foi: ${vt_destino[i]}
+                      <br> sua experiência foi: ${vt_exp[i]}`];
+    var repetir = 0;
+
+    msg.innerHTML = vt_p[0];
+
+    //setInterval(() => enviar(),4000 );*/
+
+
+    function enviar() {
+
+        //Recupere o valor da nova input pelo nome do id
+        // Agora vá para o método fetch logo abaixo
+        var nomeVar = ipt_nome.value;
+        var destinoVar = ipt_destino.value;
+        var avaliacaoVar = ipt_avaliacao.value;
+        var descVar = ipt_experiencia.value;
+
+        if (nomeVar == "" || destinoVar == "" || avaliacaoVar == "" || descVar == "") {
+            alert("Preencha todos os campos");
+            return false;
+        }
+
+        // Enviando o valor da nova input
+        fetch("/usuarios/enviar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                nomeUserServer: nomeVar,
+                destinoExpServer: destinoVar,
+                avaliacaoServer: avaliacaoVar,
+                expDescServer: descVar
+
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+               alert("oi")
+                // limparFormulario();
+            } else {
+                throw ("Houve um erro ao tentar realizar o formulário!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+        });
+
+        vt_nome.push(ipt_nome.value);
+        ipt_nome.value = '';
+
+        vt_dataViagem.push(ipt_data.value);
+        ipt_data.value = '';
+
+        vt_destino.push(ipt_destino.value);
+        ipt_destino.value = '';
+
+        vt_exp.push(ipt_experiencia.value);
+        ipt_experiencia.value = '';
+
+        ipt_email.value = '';
+
+        msg.innerHTML = '';
+        for (var i = 0; i < vt_exp.length; i++) {
+
+            msg.innerHTML = ` Seu nome é: ${vt_nome[i]} 
+                      <br> A data da sua viagem é : ${vt_dataViagem[i]}
+                      <br> Seu destino foi: ${vt_destino[i]}
+                      <br> sua experiência foi: ${vt_exp[i]}`;
+        }
+        return false;
+    }
+
+
+
+</script>
